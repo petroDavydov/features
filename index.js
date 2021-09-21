@@ -124,7 +124,8 @@ const findMyState = () => {
     titleGeo.textContent = "Unable to retrieve your location";
   };
 
-  navigator.geolocation.getCurrentPosition(success, error);
+	navigator.geolocation.getCurrentPosition(success, error);
+	
 };
 
-document.querySelector(".find-state"), addEventListener("click", findMyState);
+document.querySelector(".find-state").addEventListener("click", findMyState);
